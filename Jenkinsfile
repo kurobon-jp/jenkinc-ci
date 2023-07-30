@@ -16,7 +16,7 @@ pipeline {
 
             echo "Building Unity Project \"${workspace}\""
             // bat "${RUBY} run -u 2018.4.3f1 -r -- -batchmode -nographics -quit -projectPath '${workspace}\\UnityProject' -executeMethod AppBuilder.Build"
-            bat "\"${UNITY_PATH}\" -nographics -batchmode -projectPath \"${workspace}\""
+            // bat "\"${UNITY_PATH}\" -nographics -batchmode -projectPath \"${workspace}\""
             echo 'Stash unity build'
             // stash includes: 'bin/**/*', name: 'unity build'
          }
