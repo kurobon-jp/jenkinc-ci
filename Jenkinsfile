@@ -1,12 +1,6 @@
 UNITY_PATH = "C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.18f1\\Editor\\Unity.exe"
 
 pipeline {
-  agent {
-    node {
-      label ''
-      customWorkspace "${JENKINS_HOME}/workspace/${JOB_NAME}"
-    }
-  }
   //  environment {
   //   //  APP_NAME = "SoundVision"
   //   //  RUBY = "C:\\Ruby25-x64\\bin\\u3d"
@@ -14,6 +8,13 @@ pipeline {
   //  }
    stages {
       stage('Build'){
+         agent {
+            node {
+               label ''
+               customWorkspace "${JENKINS_HOME}/workspace/${JOB_NAME}"
+            }
+         }
+
          steps{
 
             // echo 'Generate Build Number File'
