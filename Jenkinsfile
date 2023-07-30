@@ -3,7 +3,7 @@ UNITY_PATH = "C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.18f1\\Editor\\Unity.
 pipeline {
   agent {
     node {
-      // label 'node(s)-defined-label'
+      label ''
       customWorkspace "${JENKINS_HOME}/workspace/${JOB_NAME}"
     }
   }
