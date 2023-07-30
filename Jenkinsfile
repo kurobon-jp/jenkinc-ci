@@ -2,11 +2,11 @@ UNITY_PATH = "C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.18f1\\Editor\\Unity.
 
 pipeline {
    agent any
-   environment {
-    //  APP_NAME = "SoundVision"
-    //  RUBY = "C:\\Ruby25-x64\\bin\\u3d"
-    //  MXBUILD = "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\MSBuild\\15.0\\Bin\\MSBuild.exe\""
-   }
+  //  environment {
+  //   //  APP_NAME = "SoundVision"
+  //   //  RUBY = "C:\\Ruby25-x64\\bin\\u3d"
+  //   //  MXBUILD = "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\MSBuild\\15.0\\Bin\\MSBuild.exe\""
+  //  }
    stages {
       stage('Build'){
          steps{
